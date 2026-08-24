@@ -85,7 +85,7 @@ header {
 }
 
 #home {
-    background-image: url("images/backgroundimage.jpg");
+    background-image: url("../images/backgroundimage.jpg");
     text-align: center;
     margin-bottom: 10px;
     height: 600px;
