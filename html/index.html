@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoVibe - Sign Up</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-image">
+            <div class="overlay">
+                <h1>GoVibe</h1>
+            </div>
+        </div>
+
+        <div class="form-container">
+
+            <div class="form-box">
+                <h2>Create Account</h2>
+                <p class="subtitle">Sign up to start your journey</p>
+
+                <form id="signupForm" novalidate>
+
+                    <div class="input-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" placeholder="Enter your full name">
+                        <small class="error" id="fullNameError"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="signupEmail">Email</label>
+                        <input type="email" id="signupEmail" placeholder="example@mail.com">
+                        <small class="error" id="signupEmailError"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" id="phone" maxlength="10" placeholder="10 digit phone number">
+                        <small class="error" id="phoneError"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="location">Location / City</label>
+                        <input type="text" id="location" placeholder="Enter your city">
+                        <small class="error" id="locationError"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="signupPassword">Password</label>
+
+                        <div class="password-wrapper">
+                            <input type="password" id="signupPassword" placeholder="Minimum 8 characters">
+                            <button type="button" class="toggle-password"
+                                onclick="togglePassword('signupPassword', this)">
+                                Show
+                            </button>
+                        </div>
+
+                        <small class="error" id="signupPasswordError"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="confirmPassword">Confirm Password</label>
+
+                        <div class="password-wrapper">
+                            <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                            <button type="button" class="toggle-password"
+                                onclick="togglePassword('confirmPassword', this)">
+                                Show
+                            </button>
+                        </div>
+
+                        <small class="error" id="confirmPasswordError"></small>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Create Account
+                    </button>
+
+                    <p class="switch-page">
+                        Already have an account?
+                        <a href="signin.html">Sign In</a>
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

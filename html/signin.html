@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoVibe - Sign In</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="auth-container">
+
+        <div class="auth-image">
+            <div class="overlay">
+                <h1>GoVibe</h1>
+                <p>Explore beautiful places and enjoy</p>
+            </div>
+        </div>
+
+        <div class="form-container">
+
+            <div class="form-box signin-box">
+
+                <p class="subtitle">Sign in to continue your journey</p>
+
+                <form id="signinForm" novalidate>
+
+                    <div class="input-group">
+                        <label for="signinEmail">Email</label>
+
+                        <input type="email" id="signinEmail" placeholder="example@mail.com">
+
+                        <small class="error" id="signinEmailError"></small>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="signinPassword">Password</label>
+
+                        <div class="password-wrapper">
+
+                            <input type="password" id="signinPassword" placeholder="Enter your password">
+
+                            <button type="button" class="toggle-password"
+                                onclick="togglePassword('signinPassword', this)">
+                                Show
+                            </button>
+
+                        </div>
+
+                        <small class="error" id="signinPasswordError"></small>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Sign In
+                    </button>
+
+                    <p class="switch-page">
+                        Don't have an account?
+                        <a href="index.html">Create Account</a>
+                    </p>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
